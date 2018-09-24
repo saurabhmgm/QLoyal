@@ -11,9 +11,9 @@ node {
       }
     }
      stage("Publish-Results") {
-            script{
-               bat 'make publish'
-            }
+            
+               step([$class: 'ArtifactArchiver', artifacts: '**/*.jtl, **/jmeter.log'])
+            
         }
   
 }
