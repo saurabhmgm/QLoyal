@@ -10,7 +10,7 @@ node {
 
             }
         }
-    }
+    
     stage('Run JMeter Test') {
         steps {
              script {
