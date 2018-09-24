@@ -5,10 +5,10 @@ node {
     
     
         stage('Checkout') {
-            steps {
+            
                 git branch: 'master', credentialsId: 'saurabh.kaushik003@gmail.com', url: 'https://github.com/saurabhmgm/QLoyal.git'
 
-            }
+            
         }
     
     stage('Run JMeter Test') {
