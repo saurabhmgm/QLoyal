@@ -14,7 +14,7 @@ pipeline {
     stage('Run JMeter Test') {
         steps {
             dir('Perf') {
-                bat 'C:\\apache-jmeter-3.3\\bin\\jmeter -n -t PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
+                bat 'bat 'C:/apache-jmeter-3.3/bin/jmeter -n -t PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
             }
         }
     }
