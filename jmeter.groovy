@@ -3,7 +3,7 @@
  */
 node {
      stage('Checkout') {
-       steps {
+       step {
                 git branch: 'master',  url: 'https://github.com/saurabhmgm/QLoyal.git'
 
             }
