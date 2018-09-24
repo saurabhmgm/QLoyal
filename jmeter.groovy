@@ -1,8 +1,8 @@
 /**
  * Created by KaushikS on 24/09/2018.
  */
-pipeline {
-    agent any
+node {
+    
     stages {
         stage('Checkout') {
             steps {
