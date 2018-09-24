@@ -3,7 +3,7 @@
  */
 node {
      stage('Checkout') {
-        git branch: 'master', credentialsId: 'saurabh.kaushik003@gmail.com', url: 'https://github.com/saurabhmgm/QLoyal.git'
+       checkout scm
     }
      stage('Run JMeter Test') {
         script {
