@@ -10,7 +10,9 @@ node {
     }
      stage("Publish-Results") {
             
-               step([$class: 'ArtifactArchiver', artifacts: '**/*.jtl, **/jmeter.log'])
+         script{
+                performanceReport parsers: [[$class: 'JMeterParser', glob: '**/*.PHPTRAVELS.jtl']], relativeFailedThresholdNegative: 1.2, relativeFailedThresholdPositive: 1.89, relativeUnstableThresholdNegative: 1.8, relativeUnstableThresholdPositive: 1.5
+            }         
             
         }
   
