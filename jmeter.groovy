@@ -14,7 +14,7 @@ pipeline {
     stage('Run JMeter Test') {
         steps {
              script {
-                 cd 'C:\\apache-jmeter-3.3\\bin\'
+                 
                jmeter -n -t https://github.com/saurabhmgm/QLoyal.git/Perf/PHPTRAVELS.jmx -l PHPTRAVELS.jtl
             }
         }
