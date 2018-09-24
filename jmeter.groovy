@@ -12,12 +12,9 @@ node {
         }
     
     stage('Run JMeter Test') {
-        steps {
-             script {
-                 
-               bat 'C:/apache-jmeter-3.3/bin/jmeter -n -t https://github.com/saurabhmgm/QLoyal.git/Perf/PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
-            }
-        }
+        script {
+        bat 'C:/apache-jmeter-3.3/bin/jmeter -n -t https://github.com/saurabhmgm/QLoyal.git/Perf/PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
+      }
     }
    
   
