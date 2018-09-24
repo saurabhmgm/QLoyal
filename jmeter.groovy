@@ -15,7 +15,7 @@ pipeline {
         steps {
              script {
                  
-               bat 'C:\apache-jmeter-3.3\bin\jmeter -n -t https://github.com/saurabhmgm/QLoyal.git/Perf/PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
+               bat 'C:/apache-jmeter-3.3/bin/jmeter -n -t https://github.com/saurabhmgm/QLoyal.git/Perf/PHPTRAVELS.jmx -l PHPTRAVELS.jtl'
             }
         }
     }
